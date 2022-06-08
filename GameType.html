@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" 
+          content="Hello, This is a site where you can find your game and know about Devices which you play on it">
+        <meta name="keywords" 
+          content="game,games,world,ps,pc,xbox,console,العاب,عالم">
+        <meta name="author" content="B.Man">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/fi.jpg">
+        <title>Game type - Games World</title>
+        <style>
+            #soora {position: relative;
+            -webkit-filter: blur(6px);
+            }
+            #navbar {position: fixed;list-style-type: none;
+            top: 0%;left: 5%;border-radius: 0px 0px 50px 50px;
+            width: 20%;text-align: center;background-repeat: no-repeat;
+            margin: 0;padding: 5px;font-size: 200%;
+            background-image: url(images/chstype/navbar.jpg);
+            }
+            li {display: inline;padding: 7px;
+            }
+            li a {text-decoration: none;cursor: default;color: white;
+            }
+            li a:hover{text-decoration: underline;
+            }
+            #active {cursor: default;
+            }
+            #cheese {position: absolute;
+            top: 3%; left: 31%;
+            border-radius: 80px;
+            width: 550px; height: 130px;
+            font-size: 400%; font-family:inherit;
+            background-image: url(images/chstype/cheesebtn.jpg);
+            border: none; color: #ff0066;
+            }
+            .btn {position: absolute;
+            width: 300px; height: 130px;
+            font-size: 200%; font-family:cursive;
+            font-weight: bold; color: white;
+            border-radius: 20px; border: none;
+            cursor: default;
+            }
+            #btn1 {left: 10%; top: 25%;
+            background-image: url(images/chstype/action-adventure.png);
+            }
+            #btn2 {left: 10%; top: 50%;
+            background-image: url(images/chstype/coop.jpg);
+            }
+            #btn3 {left: 10%; top: 75%;
+            background-image: url(images/chstype/horror.jpg);
+            }
+            #btn4 {right: 10%; top: 25%;
+            background-image: url(images/chstype/online.jpg);
+            }
+            #btn5 {right: 10%; top: 50%;
+            background-image: url(images/chstype/puzzle.jpg);
+            }
+            #btn6 {right: 10%; top: 75%;
+            background-image: url(images/chstype/Stealth.jpg);
+            }
+            footer {position: fixed;
+            bottom: 0;
+            width: 97.5%;
+            background-image: url(images/chstype/fotrr.jpg);
+            font-size: 180%; font-weight: bold;
+            padding: 10px;
+            float: left;
+            }
+            .fasel {color:#000000;
+            }
+            #cr {float: right;
+            font-size: 70%;
+            }
+            .foter {text-decoration: none;
+            color: #008000;
+            }
+            .foter:hover {color: darkorchid;}
+        </style>
+    </head>
+    <body>
+        <img alt="background" src="images/choose/games.jpg" id="soora"
+             width="100%" height="840px">
+        <ul id="navbar">
+            <li><a href="Ps4VsXboxOne.html">Consoles</a></li>
+            <li id="active">Games</li>
+        </ul>
+        <button type="button"
+                id="cheese">Choose Your Type</button>
+        <a href="ActionAdventure.html"><button type="button" id="btn1" 
+                class="btn"
+                onmouseover="my1OverFunction()"
+                onmouseout="my1OutFunction()">Action-Adventure</button></a>
+        <a href="CoOp.html"><button type="button" id="btn2"
+                class="btn"
+                onmouseover="my2OverFunction()"
+                onmouseout="my2OutFunction()">Co-operation</button></a>
+        <a href="horror.html"><button type="button" id="btn3"
+                class="btn"
+                onmouseover="my3OverFunction()"
+                onmouseout="my3OutFunction()">Horror</button></a>
+        <a href="online.html"><button type="button" id="btn4"
+                class="btn"
+                onmouseover="my4OverFunction()"
+                onmouseout="my4OutFunction()">Online</button></a>
+        <a href="puzzle.html"><button type="button" id="btn5"
+                class="btn"
+                onmouseover="my5OverFunction()"
+                onmouseout="my5OutFunction()">Puzzle</button></a>
+        <a href="Stealth.html"><button type="button" id="btn6"
+                class="btn"
+                onmouseover="my6OverFunction()"
+                onmouseout="my6OutFunction()">Stealth</button></a>
+        <footer>
+            <a href=
+               "HomePage.html" class="foter">Home</a> <span class=
+                "fasel">|</span>
+            <a href=
+               "about.html" class="foter">About</a> <span class=
+                "fasel">|</span><a href=
+                "ContactMe.html" class="foter"> Contact me </a>
+            <span style="color:black" id="cr">Copyright<sub>7/2016</sub></span>
+        </footer>
+        <script>
+            function my1OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/action-adventure.png"
+            }
+            function my1OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+            function my2OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/coop.jpg"
+            }
+            function my2OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+            function my3OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/horror.jpg"
+            }
+            function my3OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+            function my4OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/online.jpg"
+            }
+            function my4OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+            function my5OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/puzzle.jpg"
+            }
+            function my5OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+            function my6OverFunction() {
+                document.getElementById("soora").src =
+                    "images/chstype/Stealth.jpg"
+            }
+            function my6OutFunction() {
+                document.getElementById("soora").src =
+                    "images/choose/games.jpg"
+            }
+        </script>
+    </body>
+</html>

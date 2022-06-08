@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" 
+          content="After choosing your favourite Game type, Choose your Game">
+        <meta name="keywords" 
+          content="game,games,world,ps,pc,xbox,console,العاب,عالم">
+        <meta name="author" content="B.Man">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/fi.jpg">
+        <title>Stealth - Games World</title>
+        <style>
+            #soorra {position: relative;
+            -webkit-filter: blur(8px);
+            }
+            #cheese {position: absolute;
+            top: 3%; left: 31%;
+            border-radius: 80px;
+            width: 550px; height: 130px;
+            font-size: 400%; font-family:inherit;
+            background-image: url(images/chstype/cheesebtn.jpg);
+            border: none; color: #ff0066;
+            }
+            .btn {position: absolute;
+            font-size: 200%; font-family:cursive;
+            font-weight: bold; color: white;
+            width: 350px; height: 65;
+            border-radius: 2px; background-color: green;
+            border: 1px solid green;
+            }
+            .btn:hover {background-color: white;
+            color: rgb(10,91,208); border-radius: 20px;
+            border: 5px solid rgb(10,91,208);
+            cursor: default;
+            }
+            #btn1 {left: 10%; top: 19%;
+            }
+            .amg{position: absolute;border: none;
+            width: 39%; height: 260px;
+            }
+            #amg1 {left: 5%; top: 25.5%
+            }
+            #btn2 {left: 10%; top: 57%;
+            }
+            #amg2 {left: 5%; top: 63.5%;
+            }
+            #btn3 {right: 10%; top: 19%;
+            }
+            #amg3 {right: 5%; top: 25.5%;
+            }
+            #btn4 {right: 10%; top: 57%;
+            }
+            #amg4 {right: 5%; top: 63.5%;
+            }
+            footer {position: fixed;
+            bottom: 0;
+            width: 97.5%;
+            background-image: url(images/chstype/fotrr.jpg);
+            font-size: 180%; font-weight: bold;
+            padding: 10px;
+            float: left;
+            }
+            .fasel {color:#000000;
+            }
+            #cr {float: right;
+            font-size: 70%;
+            }
+            .foter {text-decoration: none;
+            color: #008000;
+            }
+            .foter:hover {color: darkorchid;}
+        </style>
+    </head>
+    <body>
+        <img alt="background" src="images/chstype/Stealth.jpg" id="soorra"
+             width="100%" height="840px">
+        <button type="button"
+                id="cheese">Choose Your Game</button>
+        <a href="HitmanAbsolution.html"><button type="button" 
+                id="btn1" class="btn"
+                onmouseover="over1Function()"
+                onmouseout="out1Function()">Hitman Absolution</button></a>
+        <img alt="Hitman Absolution" id="amg1" class="amg"
+             src="images/games/Stealth/Hitman absolution/wallpaper.jpg"
+                onmouseover="over1Function()"
+                onmouseout="out1Function()">
+        <a href="Thief.html"><button type="button" 
+                id="btn2" class="btn"
+                onmouseover="over2Function()"
+                onmouseout="out2Function()">Thief</button></a>
+        <img alt="Thief" id="amg2" class="amg"
+             src="images/games/Stealth/Thief/t-logo.jpg"
+                onmouseover="over2Function()"
+                onmouseout="out2Function()">
+        <a href="MarkoftheNinja.html"><button type="button" 
+                id="btn3" class="btn"
+                onmouseover="over3Function()"
+                onmouseout="out3Function()">Mark of the Ninja</button></a>
+        <img alt="Mark of the Ninja" id="amg3" class="amg"
+             src="images/games/Stealth/Mark of the Ninja/motn-logo.jpg"
+                onmouseover="over3Function()"
+                onmouseout="out3Function()">
+        <a href="MetalGearSolidV.html"><button type="button" 
+                id="btn4" class="btn"
+                onmouseover="over4Function()"
+                onmouseout="out4Function()">Metal Gear Solid V</button></a>
+        <img alt="Metal Gear Solid V" id="amg4" class="amg"
+             src="images/games/Stealth/Metal Gear Solid V/mgsv-logo.jpg"
+                onmouseover="over4Function()"
+                onmouseout="out4Function()">
+        <footer>
+            <a href=
+               "HomePage.html" class="foter">Home</a> <span class=
+                "fasel">|</span>
+            <a href=
+               "about.html" class="foter">About</a> <span class=
+                "fasel">|</span><a href=
+                "ContactMe.html" class="foter"> Contact me </a>
+            <span style="color:black" id="cr">Copyright<sub>7/2016</sub></span>
+        </footer>
+        <script>
+            function over1Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Stealth/Hitman absolution/logo.jpg"
+            }
+            function out1Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/Stealth.jpg"
+            }
+            function over2Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Stealth/Thief/t-wallpaper1.jpg"
+            }
+            function out2Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/Stealth.jpg"
+            }
+            function over3Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Stealth/Mark of the Ninja/motn-wallpaper1.jpg"
+            }
+            function out3Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/Stealth.jpg"
+            }
+            function over4Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Stealth/Metal Gear Solid V/mgsv-gameplay2.jpg"
+            }
+            function out4Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/Stealth.jpg"
+            }
+        </script>
+    </body>
+</html>

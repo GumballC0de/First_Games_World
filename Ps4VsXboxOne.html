@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" 
+          content="After choosing Consoles, choose the Comparison point">
+        <meta name="keywords" 
+          content="game,games,world,ps,pc,xbox,console,العاب,عالم">
+        <meta name="author" content="B.Man">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/fi.jpg">
+        <title>Ps4 Vs Xbox one - Games World</title>
+        <style>
+            #soorra {position: relative;
+            width: 100%; height: 842px;
+            -webkit-filter: blur(6px);
+            }
+            #navbar {position: fixed;list-style-type: none;
+            top: 0%;left: 5%;border-radius: 0px 0px 50px 50px;
+            width: 20%;text-align: center;background-repeat: no-repeat;
+            margin: 0;padding: 5px;font-size: 200%;
+            background-image: url(images/chstype/navbar.jpg);
+            }
+            li {display: inline;padding: 7px;
+            }
+            li a {text-decoration: none;cursor: default;color: white;
+            }
+            li a:hover{text-decoration: underline;
+            }
+            #active {cursor: default;
+            }
+            #cheese {position: absolute;
+            top: 3%; left: 25%;
+            border-radius: 80px;
+            width: 700px; height: 130px;
+            font-size: 400%; font-family:inherit;
+            background-image: url(images/chstype/cheesebtn.jpg);
+            border: none; color: #ff0066;
+            }
+            .btn {position: absolute;
+            width: 300px; height: 130px;
+            font-size: 200%; font-family:cursive;
+            font-weight: bold; color: white;
+            border-radius: 20px; border: none;
+            cursor: default;
+            }
+            #btn1 {left: 10%; top: 25%;
+            background-image: url(images/consoles/hardware.jpg);
+            }
+            #btn2 {right: 10%; top: 70%;
+            background-image: url(images/consoles/games.jpg);
+            }
+            #btn4 {right: 10%; top: 25%;
+            background-image: url(images/consoles/software.jpg);
+            }
+            #btn5 {left: 10%; top: 70%;
+            background-image: url(images/consoles/graphics.jpg);
+            }
+            footer {position: fixed;
+            bottom: 0;
+            width: 97.5%;
+            background-image: url(images/fotrr.jpg);
+            font-size: 180%; font-weight: bold;
+            padding: 10px;
+            float: left;
+            }
+            .fasel {color:#000000;
+            }
+            #cr {float: right;
+            font-size: 70%;
+            }
+            .foter {text-decoration: none;
+            color: #008000;
+            }
+            .foter:hover {color: darkorchid;
+            }
+        </style>
+    </head>
+    <body>
+        <img alt="Ps4 Vs Xbox one" id="soorra"
+            src="images/choose/ps4vsxboxone.jpg">
+        <ul id="navbar">
+            <li id="active">Consoles</li>
+            <li><a href="GameType.html">Games</a></li>
+        </ul>
+        <button type="button"
+                id="cheese">Choose Comparison Point</button>
+        <a href="HardwareComparison.html"><button type="button"
+                id="btn1" class="btn"
+                onmouseover="my1OverFunction()"
+                onmouseout="my1OutFunction()">Hardware</button></a>
+        <a href="SoftwareComparison.html"><button type="button" 
+                id="btn4" class="btn"
+                onmouseover="my2OverFunction()"
+                onmouseout="my2OutFunction()">Software</button></a>
+        <a href="GraphicsComparison.html"><button type="button" 
+                id="btn5" class="btn"
+                onmouseover="my3OverFunction()"
+                onmouseout="my3OutFunction()">Graphics</button></a>
+        <a href="GamesComparison.html"><button type="button"
+                id="btn2" class="btn"
+                onmouseover="my5OverFunction()"
+                onmouseout="my5OutFunction()">Games</button></a>
+        <footer>
+            <a href=
+               "HomePage.html" class="foter">Home</a> <span class=
+                "fasel">|</span>
+            <a href=
+               "about.html" class="foter">About</a> <span class=
+                "fasel">|</span><a href=
+                "ContactMe.html" class="foter"> Contact me </a>
+            <span style="color:black" id="cr">Copyright<sub>7/2016</sub></span>
+        </footer>
+        <script>
+            function my1OverFunction() {
+                document.getElementById("soorra").src =
+                    "images/consoles/hardware.jpg"
+            }
+            function my1OutFunction() {
+                document.getElementById("soorra").src =
+                    "images/choose/ps4vsxboxone.jpg"
+            }
+            function my2OverFunction() {
+                document.getElementById("soorra").src =
+                    "images/consoles/software.jpg"
+            }
+            function my2OutFunction() {
+                document.getElementById("soorra").src =
+                    "images/choose/ps4vsxboxone.jpg"
+            }
+            function my3OverFunction() {
+                document.getElementById("soorra").src =
+                    "images/consoles/graphics.jpg"
+            }
+            function my3OutFunction() {
+                document.getElementById("soorra").src =
+                    "images/choose/ps4vsxboxone.jpg"
+            }
+            function my5OverFunction() {
+                document.getElementById("soorra").src =
+                    "images/consoles/games.jpg"
+            }
+            function my5OutFunction() {
+                document.getElementById("soorra").src =
+                    "images/choose/ps4vsxboxone.jpg"
+            }
+       </script>
+    </body>
+</html>

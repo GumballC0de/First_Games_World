@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" 
+          content="After choosing your favourite Game type, Choose your Game">
+        <meta name="keywords" 
+          content="game,games,world,ps,pc,xbox,console,العاب,عالم">
+        <meta name="author" content="B.Man">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/fi.jpg">
+        <title>Online - Games World</title>
+        <style>
+            #soorra {position: relative;
+            -webkit-filter: blur(8px);
+            }
+            #cheese {position: absolute;
+            top: 3%; left: 31%;
+            border-radius: 80px;
+            width: 550px; height: 150px;
+            font-size: 400%; font-family:inherit;
+            background-image: url(images/chstype/cheesebtn.jpg);
+            border: none; color: #ff0066;
+            }
+            .btn {position: absolute;
+            font-size: 200%; font-family:cursive;
+            font-weight: bold; color: white;
+            width: 400px; height: 65;
+            border-radius: 2px; background-color: green;
+            border: 1px solid green;
+            }
+            .btn:hover {background-color: white;
+            color: rgb(10,91,208); border-radius: 20px;
+            border: 5px solid rgb(10,91,208);
+            cursor: default;
+            }
+            .amg{position: absolute;border: none;
+            width: 40%; height: 380px;
+            }
+            #btn1 {left: 10%; top: 30%;
+            }
+            #amg1 {left: 5%; top: 36.5%
+            }
+            #btn2 {right: 10%; top: 30%;
+            }
+            #amg2 {right: 5%; top: 36.5%;
+            }
+            footer {position: fixed;
+            bottom: 0;
+            width: 97.5%;
+            background-image: url(images/chstype/fotrr.jpg);
+            font-size: 180%; font-weight: bold;
+            padding: 10px;
+            float: left;
+            }
+            .fasel {color:#000000;
+            }
+            #cr {float: right;
+            font-size: 70%;
+            }
+            .foter {text-decoration: none;
+            color: #008000;
+            }
+            .foter:hover {color: darkorchid;}
+        </style>
+    </head>
+    <body>
+        <img alt="background" src="images/chstype/online.jpg" id="soorra"
+             width="100%" height="1140px">
+        <button type="button"
+                id="cheese">Choose Your Game</button>
+        <a href="Warframe.html"><button type="button" 
+                id="btn1" class="btn"
+                onmouseover="over1Function()"
+                onmouseout="out1Function()">Warframe</button></a>
+        <img alt="Warframe" id="amg1" class="amg"
+             src="images/games/Online/Warframe/warframe-logo.png"
+                onmouseover="over1Function()"
+                onmouseout="out1Function()">
+        <a href="LeagueOfLegends.html"><button type="button" 
+                id="btn2" class="btn"
+                onmouseover="over2Function()"
+                onmouseout="out2Function()">League Of Legends</button></a>
+        <img alt="League Of Legends" id="amg2" class="amg"
+             src="images/games/Online/League Of Legends/lol-wallpaper1.jpg"
+                onmouseover="over2Function()"
+                onmouseout="out2Function()">
+        <footer>
+            <a href=
+               "HomePage.html" class="foter">Home</a> <span class=
+                "fasel">|</span>
+            <a href=
+               "about.html" class="foter">About</a> <span class=
+                "fasel">|</span><a href=
+                "ContactMe.html" class="foter"> Contact me </a>
+            <span style="color:black" id="cr">Copyright<sub>7/2016</sub></span>
+        </footer>
+        <script>
+            function over1Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Online/Warframe/warframes1.jpg"
+            }
+            function out1Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/online.jpg"
+            }
+            function over2Function() {
+                document.getElementById("soorra").src =
+                    "images/games/Online/League Of Legends/lol-wallpaper0.jpg"
+            }
+            function out2Function() {
+                document.getElementById("soorra").src =
+                    "images/chstype/online.jpg"
+            }
+        </script>
+    </body>
+</html>
